@@ -13,7 +13,20 @@
 		AAAD3A16278B33C600F17BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAD3A14278B33C600F17BD4 /* Main.storyboard */; };
 		AAAD3A18278B33C600F17BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAD3A17278B33C600F17BD4 /* Assets.xcassets */; };
 		AAAD3A1B278B33C600F17BD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAD3A19278B33C600F17BD4 /* LaunchScreen.storyboard */; };
+		AAAD3A25278B35CD00F17BD4 /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD3A24278B35CD00F17BD4 /* CurrencyTxtField.swift */; };
+		AAAD3A2D278B3E9200F17BD4 /* inputcal_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD3A2C278B3E9200F17BD4 /* inputcal_appTests.swift */; };
+		AAAD3A35278B3ED000F17BD4 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD3A34278B3ED000F17BD4 /* Wage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAAD3A2E278B3E9200F17BD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAAD3A03278B33C600F17BD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAAD3A0A278B33C600F17BD4;
+			remoteInfo = "inputcal-app";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AAAD3A0B278B33C600F17BD4 /* inputcal-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "inputcal-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,21 @@
 		AAAD3A17278B33C600F17BD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAAD3A1A278B33C600F17BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAAD3A1C278B33C600F17BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAD3A24278B35CD00F17BD4 /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
+		AAAD3A2A278B3E9200F17BD4 /* inputcal-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "inputcal-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAD3A2C278B3E9200F17BD4 /* inputcal_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputcal_appTests.swift; sourceTree = "<group>"; };
+		AAAD3A34278B3ED000F17BD4 /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AAAD3A08278B33C600F17BD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAD3A27278B3E9200F17BD4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				AAAD3A0D278B33C600F17BD4 /* inputcal-app */,
+				AAAD3A2B278B3E9200F17BD4 /* inputcal-appTests */,
 				AAAD3A0C278B33C600F17BD4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				AAAD3A0B278B33C600F17BD4 /* inputcal-app.app */,
+				AAAD3A2A278B3E9200F17BD4 /* inputcal-appTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +82,49 @@
 		AAAD3A0D278B33C600F17BD4 /* inputcal-app */ = {
 			isa = PBXGroup;
 			children = (
+				AAAD3A33278B3EA700F17BD4 /* Model */,
+				AAAD3A23278B35A400F17BD4 /* Views */,
+				AAAD3A22278B343700F17BD4 /* Controller */,
 				AAAD3A0E278B33C600F17BD4 /* AppDelegate.swift */,
 				AAAD3A10278B33C600F17BD4 /* SceneDelegate.swift */,
-				AAAD3A12278B33C600F17BD4 /* ViewController.swift */,
 				AAAD3A14278B33C600F17BD4 /* Main.storyboard */,
 				AAAD3A17278B33C600F17BD4 /* Assets.xcassets */,
 				AAAD3A19278B33C600F17BD4 /* LaunchScreen.storyboard */,
 				AAAD3A1C278B33C600F17BD4 /* Info.plist */,
 			);
 			path = "inputcal-app";
+			sourceTree = "<group>";
+		};
+		AAAD3A22278B343700F17BD4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AAAD3A12278B33C600F17BD4 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AAAD3A23278B35A400F17BD4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAAD3A24278B35CD00F17BD4 /* CurrencyTxtField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAAD3A2B278B3E9200F17BD4 /* inputcal-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAAD3A2C278B3E9200F17BD4 /* inputcal_appTests.swift */,
+			);
+			path = "inputcal-appTests";
+			sourceTree = "<group>";
+		};
+		AAAD3A33278B3EA700F17BD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAAD3A34278B3ED000F17BD4 /* Wage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +147,24 @@
 			productReference = AAAD3A0B278B33C600F17BD4 /* inputcal-app.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AAAD3A29278B3E9200F17BD4 /* inputcal-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAAD3A30278B3E9200F17BD4 /* Build configuration list for PBXNativeTarget "inputcal-appTests" */;
+			buildPhases = (
+				AAAD3A26278B3E9200F17BD4 /* Sources */,
+				AAAD3A27278B3E9200F17BD4 /* Frameworks */,
+				AAAD3A28278B3E9200F17BD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAAD3A2F278B3E9200F17BD4 /* PBXTargetDependency */,
+			);
+			name = "inputcal-appTests";
+			productName = "inputcal-appTests";
+			productReference = AAAD3A2A278B3E9200F17BD4 /* inputcal-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +177,10 @@
 				TargetAttributes = {
 					AAAD3A0A278B33C600F17BD4 = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					AAAD3A29278B3E9200F17BD4 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = AAAD3A0A278B33C600F17BD4;
 					};
 				};
 			};
@@ -116,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				AAAD3A0A278B33C600F17BD4 /* inputcal-app */,
+				AAAD3A29278B3E9200F17BD4 /* inputcal-appTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +214,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAAD3A28278B3E9200F17BD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +228,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAD3A25278B35CD00F17BD4 /* CurrencyTxtField.swift in Sources */,
 				AAAD3A13278B33C600F17BD4 /* ViewController.swift in Sources */,
+				AAAD3A35278B3ED000F17BD4 /* Wage.swift in Sources */,
 				AAAD3A0F278B33C600F17BD4 /* AppDelegate.swift in Sources */,
 				AAAD3A11278B33C600F17BD4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAAD3A26278B3E9200F17BD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAD3A2D278B3E9200F17BD4 /* inputcal_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAAD3A2F278B3E9200F17BD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAAD3A0A278B33C600F17BD4 /* inputcal-app */;
+			targetProxy = AAAD3A2E278B3E9200F17BD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AAAD3A14278B33C600F17BD4 /* Main.storyboard */ = {
@@ -294,6 +402,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +430,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +443,50 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAAD3A31278B3E9200F17BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "forddev777.inputcal-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/inputcal-app.app/inputcal-app";
+			};
+			name = Debug;
+		};
+		AAAD3A32278B3E9200F17BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "forddev777.inputcal-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/inputcal-app.app/inputcal-app";
 			};
 			name = Release;
 		};
@@ -353,6 +507,15 @@
 			buildConfigurations = (
 				AAAD3A20278B33C600F17BD4 /* Debug */,
 				AAAD3A21278B33C600F17BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAAD3A30278B3E9200F17BD4 /* Build configuration list for PBXNativeTarget "inputcal-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAD3A31278B3E9200F17BD4 /* Debug */,
+				AAAD3A32278B3E9200F17BD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
